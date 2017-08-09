@@ -24,6 +24,7 @@ p {
   line-height: 35px;
   margin-bottom: 20px;
 }
+/*This to fix the line-height causing the first line to be align below the image*/
 section:first-child p {
   margin-top: -9px;
 }
@@ -37,6 +38,8 @@ hr {
 .header-bar {
   border-bottom: #cccccc solid 2px;
 }
+/*Allows for the footer to be a sticky footer, without defining a fixed height for the footer
+*/
 .content {
   min-height: calc(100vh - 70px);
 }
@@ -46,20 +49,25 @@ hr {
 .right {
   float: right;
 }
+/*content-container is used for all section that need a white background and margin-bottom of 40px like the nav bar, main section with content, and the aside*/
 .content-container {
   margin-bottom: 40px;
   background: #fff;
 }
+/*main-container is for setting the fixed width of the viewable content on the page*/
 .main-container {
   margin: 0 auto;
   width: 960px;
 }
+/*section-container width is calculated with border and padding subtracted out*/
 .section-container {
   width: 608px;
 }
+/*side-container width is calculated with border and padding subtracted out*/
 .side-container {
   width: 228px;
 }
+/*class name could be better... for "name logo"*/
 .personal {
   background: #4aaaa5;
   color: #fff;
@@ -100,6 +108,7 @@ input[type="submit"] {
   border:none;
   cursor: pointer;
 }
+/*Position needs to be relative to figcaption can be absolute*/
 figure {
   position: relative;
   margin-bottom: 40px;
@@ -119,6 +128,7 @@ figcaption h3 {
 .profile-image {
   margin-right: 10px;
 }
+/*only applied to one element to give proper spacing for the 3 social icons*/
 .icon {
   margin: 0 5px;
 }
@@ -140,7 +150,7 @@ footer {
   color: #dddddd;
 }
 .hover:hover {
-  transition: all .2s ease-in-out;
+  transition: all .4s ease-in-out;
   transform: scale(1.1);
   box-shadow: 0 0 20px rgba(74,170,75,.5);
 }
