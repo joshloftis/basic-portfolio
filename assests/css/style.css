@@ -24,7 +24,7 @@ p {
   line-height: 35px;
   margin-bottom: 20px;
 }
-/*This to fix the line-height causing the first line to be align below the image*/
+/*This to fix the line-height causing the first line to be aligned below the image*/
 section:first-child p {
   margin-top: -9px;
 }
@@ -38,10 +38,9 @@ hr {
 .header-bar {
   border-bottom: #cccccc solid 2px;
 }
-/*Allows for the footer to be a sticky footer, without defining a fixed height for the footer
-*/
+/*Allows for the footer to be a sticky footer, without defining a fixed height for the footer. Substracting 80px because 80px is the calculated height of the non-height-fixed footer*/
 .content {
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 80px);
 }
 .left {
   float: left;
